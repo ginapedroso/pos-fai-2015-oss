@@ -205,7 +205,7 @@
                 $scope.novaordem = OrdemService.queryById({id: $routeParams.ordemId});
 
                 $scope.salvarOrdem = function(){
-                    ClienteService.update($scope.novaordem, function(){
+                    OrdemService.update($scope.novaordem, function(){
                         $location.path("/ordens");
                     });
                 }
